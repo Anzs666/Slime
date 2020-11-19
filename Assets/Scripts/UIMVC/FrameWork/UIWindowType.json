@@ -1,0 +1,11 @@
+{
+    {
+        "windowType": "Task",
+        "path": "Prefabs/UIWindow/UITaskWindow"
+    }
+
+    {
+        "windowType": "Package",
+        "path": "Prefabs/UIWindow/UIPackageWindow"
+    }
+}

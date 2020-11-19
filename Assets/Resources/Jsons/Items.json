@@ -1,0 +1,25 @@
+[
+    {
+        "ID": 1,
+        "Name": "破旧的蝙蝠之翼",
+        "Value": 1000,
+        "Weight": 5,
+        "Desp": "它们似乎很不爱惜自己的翅膀",
+        "Sprite": "Images/Items/BatWing",
+        "Entity": "Prefabs/Items/BatWing",
+        "ItemType": "SkillItem",
+        "SkillId": 1
+    },
+    {
+        "ID": 2,
+        "Name": "破旧的蝙蝠之翼",
+        "Value": 1000,
+        "Weight": 1,
+        "Desp": "它们似乎很不爱惜自己的翅膀",
+        "Sprite": "Images/Items/BatWing",
+        "Entity": "Prefabs/Items/BatWing",
+        "ItemType": "SkillItem",
+        "SkillId": 1
+    }
+    
+]
