@@ -82,11 +82,11 @@ namespace ARPG.Character
         private void Jump()
         {
             if (Input.GetKeyDown(KeyCode.W)) chMotor.Jumping = true;
-            else chMotor.Jumping = false;        
+            else chMotor.Jumping = false;
             if (Input.GetKey(KeyCode.W))
             {
                 chMotor.Jump();
-            }        
+            }
         }
         //跳跃动画设置
         private void JumpAnimation()
@@ -95,15 +95,24 @@ namespace ARPG.Character
             if (chMotor.IsGround)
                 anim.SetBool(playerStatus.chParameter.Jump, false);
             else
-                anim.SetBool(playerStatus.chParameter.Jump, true);          
+                anim.SetBool(playerStatus.chParameter.Jump, true);
         }
-     
+
         private void Walk()
         {
             float dx = 0;
             dx = Input.GetAxisRaw("Horizontal");
             chMotor.HorizontalMove(dx);
-            anim.SetFloat(playerStatus.chParameter.Walk, Mathf.Abs(chMotor.GetVelocity().x));           
+            if (dx != 0)
+            {
+                anim.SetBool(playerStatus.chParameter.Walk, true);//Mathf.Abs(chMotor.GetVelocity().x)); 
+                anim.SetFloat("Velocity_x", 1f);
+            }
+            else
+            {
+                anim.SetBool(playerStatus.chParameter.Walk, false);
+                anim.SetFloat("Velocity_x", 0f);
+            }
         }
 #elif UNITY_IPHONE
             //在Iphone下

@@ -4,7 +4,7 @@ using UnityEngine;
 using ARPG.Character.Function;
 namespace ARPG.Character
 {
-    public class PlayerMotor :CharacterMotor,ICharacterJump,ICharacterWalk
+    public class PlayerMotor : CharacterMotor, ICharacterJump, ICharacterWalk
     {
         //水平移动
         private float moveSpeed;
@@ -49,7 +49,7 @@ namespace ARPG.Character
                 rigb2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
             }
 
-        }   
+        }
 
         public void Jump()
         {
@@ -61,11 +61,13 @@ namespace ARPG.Character
 
         public void HorizontalMove(float dx)
         {
-            float vx = dx*addSpeed/dx<=MAXMoveSpeed?dx*addSpeed:MAXMOVESpeed;
-           // rigb2D.velocity = new Vector2(rigb2D.velocity.x + vx, rigb2D.velocity.y);
-            //转向
-            if (vx != 0)
+            if (dx != 0)
+            {
+                float vx = rigb2D.velocity.x + dx * addSpeed;
+                vx = (vx / dx) <= MAXMoveSpeed ? vx : MAXMOVESpeed / dx;
+                rigb2D.velocity = new Vector2(vx, rigb2D.velocity.y);
                 transform.localScale = new Vector3(dx, 1, 1);
+            }
         }
 
         public void DirectMove(Vector2 direction)
