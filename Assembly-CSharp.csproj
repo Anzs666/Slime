@@ -62,8 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LiquidPhysics\Scripts\DynamicParticle.cs" />
-    <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollowWithCursor.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorUI.cs" />
@@ -73,7 +71,9 @@
     <Compile Include="Assets\Scripts\CharacterScripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\CharaterStatus.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\NifeSlash.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterJump.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterWalk.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMStateID.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMTriggerID.cs" />
     <Compile Include="Assets\Scripts\FSM\FSMBase.cs" />

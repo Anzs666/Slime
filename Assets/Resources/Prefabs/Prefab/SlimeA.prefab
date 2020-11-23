@@ -24,11 +24,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466625755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.626, y: -0.55, z: 0}
+  m_LocalPosition: {x: 0.561, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69500860600587855}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &69500860600587845
 GameObject:
@@ -45,8 +45,8 @@ GameObject:
   - component: {fileID: 69500861971963797}
   - component: {fileID: 69500861971963794}
   - component: {fileID: 69500861971963795}
+  - component: {fileID: 5561261717963382153}
   - component: {fileID: 69500861971963792}
-  - component: {fileID: 69500861971963793}
   - component: {fileID: 597496833}
   m_Layer: 0
   m_Name: SlimeA
@@ -66,7 +66,6 @@ Transform:
   m_LocalPosition: {x: -0.33915, y: -2.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 69500862180045852}
   - {fileID: 4103874612713433592}
   - {fileID: 1466625756}
   m_Father: {fileID: 0}
@@ -239,7 +238,7 @@ MonoBehaviour:
     level: 0
     attackType: 0
     selectorType: 0
-  GeneratePoint: {fileID: 69500861829508080}
+  GeneratePoint: {fileID: 0}
 --- !u!114 &69500861971963795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +251,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366976b9c5ac74b4aab4e708477ee63f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5561261717963382153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69500860600587845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17435c76347e9e746b081b8ae2208a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundChecks:
+  - {fileID: 4103874612713433592}
+  - {fileID: 1466625756}
 --- !u!114 &69500861971963792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +291,7 @@ MonoBehaviour:
     BeAttacked: BeAttacked
     FindTarget: FindTarget
   Speed: 8
+  AddSpeed: 0.5
   JumpForce: 8
   Hp: 10
   maxHp: 10
@@ -287,21 +302,6 @@ MonoBehaviour:
   attackInterval: 10
   attackDistance: 10
   scoutDistance: 0
---- !u!114 &69500861971963793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69500860600587845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296177d47ba286946ae1c521a813d705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundChecks:
-  - {fileID: 4103874612713433592}
-  - {fileID: 1466625756}
 --- !u!61 &597496833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -328,80 +328,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2553015, y: 0.69682086}
   m_EdgeRadius: 0
---- !u!1 &69500861829508085
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 69500861829508080}
-  m_Layer: 0
-  m_Name: SkillGeneratePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &69500861829508080
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69500861829508085}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29, y: 0.003, z: 0}
-  m_LocalScale: {x: 1.7688001, y: 1.7688001, z: 1.7688001}
-  m_Children: []
-  m_Father: {fileID: 69500862180045852}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &69500862180045855
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 69500862180045852}
-  - component: {fileID: 69500862180045853}
-  m_Layer: 0
-  m_Name: SkillPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &69500862180045852
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69500862180045855}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.022, y: -0.002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 69500861829508080}
-  m_Father: {fileID: 69500860600587855}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &69500862180045853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69500862180045855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b6552d7c5520e44f80e34f4c4f78243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3527592889827672655
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,9 +352,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3527592889827672655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.619, y: -0.55, z: 0}
+  m_LocalPosition: {x: -0.57, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69500860600587855}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

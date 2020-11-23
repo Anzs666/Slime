@@ -9,6 +9,8 @@ namespace ARPG.Character
         public CharacterAnimationParameter chParameter;
         [Tooltip("移动速度")]
         public float Speed;
+        [Tooltip("加速度")]
+        public float AddSpeed;
         [Tooltip("跳跃力度")]
         public float JumpForce;
         [Tooltip("血量")]

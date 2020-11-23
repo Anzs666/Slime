@@ -21,7 +21,7 @@ public class FollowState : FSMState
         base.ActionState(fsm);
         //获取最小值
         Vector3 movement=(fsm.SelectTargetByDistanceMin(fsm.chStatus.scoutDistance).position - fsm.transform.position).normalized;
-        fsm.chMotor.MoveSpeed=followSpeed;
+        //fsm.chMotor.MoveSpeed=followSpeed;
         //Debug.Log(movement);
         //fsm.chMotor.Movement(movement);
     }
