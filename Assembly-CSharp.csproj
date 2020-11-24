@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Eidtor\AutoSetLabels.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollowWithCursor.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorUI.cs" />
@@ -179,9 +180,9 @@
     <Compile Include="Assets\Scripts\UIMVC\View\UITaskWindow.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
     <None Include="Assets\Scripts\Tools\JSON\readme.txt" />
-    <None Include="Assets\Resources\Shaders\Metaballs_Multiple.shader" />
+    <None Include="Assets\AB_Res\Resources\Shaders\Metaballs_Multiple.shader" />
     <None Include="Assets\StreamingAssets\ConfigMap.txt" />
-    <None Include="Assets\Resources\Shaders\Shader\DefaultColorFlash.shader" />
+    <None Include="Assets\AB_Res\Resources\Shaders\Shader\DefaultColorFlash.shader" />
     <None Include="Assets\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
