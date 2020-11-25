@@ -17,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - Room
   - Enemy
-  - Wall
   - Ground
+  - BackGround
+  - Player
   - 
   - 
   - 
