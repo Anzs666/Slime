@@ -50,7 +50,7 @@ namespace ARPG.Character
             }
 
         }
-
+        //跳跃
         public void Jump()
         {
             if (IsGround)
@@ -58,7 +58,7 @@ namespace ARPG.Character
                 rigb2D.velocity = new Vector2(rigb2D.velocity.x, jumpForce);
             }
         }
-
+        //水平移动
         public void HorizontalMove(float dx)
         {
             if (dx != 0)
