@@ -20,7 +20,7 @@ public class RandomMoveState : FSMState
         //随机移动
         if (randomMoveLastChangeTime + randomMoveChangeInterval < Time.time)
         {
-            fsm.chMotor.MoveSpeed=fsm.chStatus.Speed;
+            //fsm.chMotor.MoveSpeed=fsm.chStatus.Speed;
             //随机改变下一次间隙             
             float Angle = UnityEngine.Random.Range(0, 360);
             moveX = (float)Math.Cos(Angle);

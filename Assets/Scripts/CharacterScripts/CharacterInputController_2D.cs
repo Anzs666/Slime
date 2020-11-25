@@ -16,14 +16,14 @@ namespace ARPG.Character
 
         private Animator anim;
         private CharaterStatus playerStatus;
-        private CharacterMotor chMotor;
+        private PlayerMotor chMotor;
         private CharacterSkillSystem skillSystem;
 
         private void Start()
         {
             anim = GetComponent<Animator>();
             playerStatus = GetComponent<CharaterStatus>();
-            chMotor = GetComponent<CharacterMotor>();
+            chMotor = GetComponent<PlayerMotor>();
             chMotor.InitMotor(playerStatus);
             skillSystem = GetComponent<CharacterSkillSystem>();
         }
@@ -81,12 +81,12 @@ namespace ARPG.Character
         //跳跃
         private void Jump()
         {
+            if (Input.GetKeyDown(KeyCode.W)) chMotor.Jumping = true;
+            else chMotor.Jumping = false;
             if (Input.GetKey(KeyCode.W))
             {
                 chMotor.Jump();
             }
-            if (Input.GetKeyDown(KeyCode.W)) chMotor.Jumping = true;
-            else chMotor.Jumping = false;         
         }
         //跳跃动画设置
         private void JumpAnimation()
@@ -95,37 +95,24 @@ namespace ARPG.Character
             if (chMotor.IsGround)
                 anim.SetBool(playerStatus.chParameter.Jump, false);
             else
-                anim.SetBool(playerStatus.chParameter.Jump, true);          
+                anim.SetBool(playerStatus.chParameter.Jump, true);
         }
-        //走路
-        float mulSpeed = 0;
+
         private void Walk()
         {
-            float Movex = 0;
-            Movex = Input.GetAxisRaw("Horizontal");
-            if (Input.GetKey(KeyCode.A))
+            float dx = 0;
+            dx = Input.GetAxisRaw("Horizontal");
+            chMotor.HorizontalMove(dx);
+            if (dx != 0)
             {
-                mulSpeed += 0.5f;
-                if (Input.GetKey(KeyCode.D))
-                {
-                    mulSpeed = 0;
-                }
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                mulSpeed += 0.5f;
-                if (Input.GetKey(KeyCode.A))
-                {
-                    mulSpeed = 0;
-                }
+                anim.SetBool(playerStatus.chParameter.Walk, true);//Mathf.Abs(chMotor.GetVelocity().x)); 
+                anim.SetFloat("Velocity_x", 1f);
             }
             else
             {
-                mulSpeed = 0;
+                anim.SetBool(playerStatus.chParameter.Walk, false);
+                anim.SetFloat("Velocity_x", 0f);
             }
-            anim.SetFloat(playerStatus.chParameter.Walk, Mathf.Abs(chMotor.GetVelocity().x));
-            chMotor.MoveSpeed = mulSpeed;  
-            chMotor.HorizontalMovement(Movex);
         }
 #elif UNITY_IPHONE
             //在Iphone下

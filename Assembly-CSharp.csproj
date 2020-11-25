@@ -62,8 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LiquidPhysics\Scripts\DynamicParticle.cs" />
-    <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Eidtor\AutoSetLabels.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Eidtor\BuildAssetBundle.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Eidtor\DeleteAssetBundle.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Tools\PathTool.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollowWithCursor.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorUI.cs" />
@@ -73,7 +75,9 @@
     <Compile Include="Assets\Scripts\CharacterScripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\CharaterStatus.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\NifeSlash.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterJump.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterWalk.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMStateID.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMTriggerID.cs" />
     <Compile Include="Assets\Scripts\FSM\FSMBase.cs" />
@@ -179,9 +183,7 @@
     <Compile Include="Assets\Scripts\UIMVC\View\UITaskWindow.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
     <None Include="Assets\Scripts\Tools\JSON\readme.txt" />
-    <None Include="Assets\Resources\Shaders\Metaballs_Multiple.shader" />
     <None Include="Assets\StreamingAssets\ConfigMap.txt" />
-    <None Include="Assets\Resources\Shaders\Shader\DefaultColorFlash.shader" />
     <None Include="Assets\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
