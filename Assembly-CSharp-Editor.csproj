@@ -62,6 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Editor\AutoSetLabels.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Editor\BuildAssetBundle.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Editor\DeleteAssetBundle.cs" />
     <Compile Include="Assets\Scripts\Tools\JSON\Editor\JSONChecker.cs" />
     <Compile Include="Assets\Scripts\Tools\MyHelper\Common\Editor\GenerateResConfig.cs" />
     <Reference Include="UnityEngine">

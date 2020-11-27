@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2717375364
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scenes_1/animations.ab
+      Dependencies:
+        Dependency_0: scenes_1/textures.ab
+    Info_1:
+      Name: scenes_1/jsons.ab
+      Dependencies: {}
+    Info_2:
+      Name: scenes_1/phymaterials.ab
+      Dependencies: {}
+    Info_3:
+      Name: scenes_1/prefabs.ab
+      Dependencies:
+        Dependency_0: scenes_1/animations.ab
+        Dependency_1: scenes_1/phymaterials.ab
+        Dependency_2: scenes_1/shaders.ab
+        Dependency_3: scenes_1/textures.ab
+    Info_4:
+      Name: scenes_1/shaders.ab
+      Dependencies: {}
+    Info_5:
+      Name: scenes_1/textures.ab
+      Dependencies:
+        Dependency_0: scenes_1/animations.ab

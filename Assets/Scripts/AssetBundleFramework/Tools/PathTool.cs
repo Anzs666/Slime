@@ -12,7 +12,7 @@ namespace ABFW{
             return Application.dataPath + "/" + AB_RESOURCES;
         }
         /// <summary>
-        /// 获取AB输出路径
+        /// 获取AB输出路径 ：平台路径+平台名称
         /// </summary>
         /// <returns></returns>
         public static string GetABOutPath()
@@ -39,7 +39,7 @@ namespace ABFW{
             return strReturnPlatformPath;
         }
 
-        private static string GetPlatformName()
+        public static string GetPlatformName()
         {
             string strReturnPlatformName = string.Empty;
             switch (Application.platform)
@@ -58,6 +58,28 @@ namespace ABFW{
                     break;
             }
             return strReturnPlatformName;
+        }
+        /// <summary>
+        /// 获取平台www路径（格式固定）
+        /// </summary>
+        /// <returns></returns>
+        public static string GetWWWPath()
+        {
+            string strReturnWWWPath = string.Empty;
+            switch (Application.platform)
+            {
+                //Windows主平台
+                case RuntimePlatform.WindowsPlayer:
+                case RuntimePlatform.WindowsEditor:
+                    strReturnWWWPath = "file://" + GetABOutPath();
+                    break;
+                case RuntimePlatform.Android:
+                    strReturnWWWPath = "jar:file://"+GetABOutPath();
+                    break;
+                default:
+                    break;
+            }
+            return strReturnWWWPath;
         }
 	}
 }

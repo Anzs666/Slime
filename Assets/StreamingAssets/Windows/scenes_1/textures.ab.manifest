@@ -1,0 +1,206 @@
+ManifestFileVersion: 0
+CRC: 764098622
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 08a9e03edcc6fc8cc13d356025d0ca04
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 321223f8476375b2b3797dce5fef053a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Map_Rooms.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_10.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Appearing (96x96).png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/BatFindTarget.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0015_\u56FE\u5C42-1-\u62F7\u8D1D-24.png"
+- Assets/AB_Res/Scenes_1/Textures/Items/BatWing.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0019_\u56FE\u5C42-1-\u62F7\u8D1D-19.png"
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_01.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/power-up.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_07.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Green.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/PinkEye.controller
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0002.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkEnd/WalkEnd-0007.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_9.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_10.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0024_\u56FE\u5C42-1-\u62F7\u8D1D-3.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkStart/walkStart-0002.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0013_\u56FE\u5C42-1-\u62F7\u8D1D-26.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0021_\u56FE\u5C42-1-\u62F7\u8D1D-16.png"
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase02.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Blue.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_5.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0007.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Gray.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_8.png
+- Assets/AB_Res/Scenes_1/Textures/Terrain/Terrain Sliced (16x16).png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Earth01.png
+- Assets/AB_Res/Scenes_1/Textures/UI/Button/CloseButton_1.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkStart/walkStart-0001.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase09.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Slash.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Grasses/grass_1.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0009_\u56FE\u5C42-1-\u62F7\u8D1D-28.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_2.png
+- Assets/AB_Res/Scenes_1/Textures/UI/Object/CircleContainer.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/impact.png
+- Assets/AB_Res/Scenes_1/Textures/Items/BlueDiamon.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_3.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0004.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0006.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Hurt/PinkEye_Hurt.anim
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_1.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_1.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_5.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Pink.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Wall03.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/EnterWalk/PinkEye_EnterWalk.anim
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase10.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0010_\u56FE\u5C42-1-\u62F7\u8D1D-27.png"
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase04.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0008_\u56FE\u5C42-1-\u62F7\u8D1D-29.png"
+- Assets/AB_Res/Scenes_1/Textures/Object/symbols/exclamationMark.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Sky01.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_3.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0025_\u56FE\u5C42-1-\u62F7\u8D1D-2.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_1.controller
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase19.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_12.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_02.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase11.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Yellow.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/EnterWalk/PinkEyeEnterWalk_3.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkStart/walkStart-0005.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_1.png
+- Assets/AB_Res/Scenes_1/Textures/Terrain/Terrain (16x16) 1.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_11.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_6.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_4.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0006.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0005_\u56FE\u5C42-1-\u62F7\u8D1D-10.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/EnterWalk/PinkEyeEnterWalk_1.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/shot.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Well01.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Hurt/PinkEyeHurt_1.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_8.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Map_Door.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0023_\u56FE\u5C42-1-\u62F7\u8D1D-5.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0026_\u56FE\u5C42-1.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEye_Walking.anim
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_3.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Wall02.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0000_\u56FE\u5C42-1-\u62F7\u8D1D-13.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_5.png
+- Assets/AB_Res/Scenes_1/Textures/UI/Object/CircleContainerCover.png
+- Assets/AB_Res/Scenes_1/Textures/Items/DragonGlass.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase03.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Mushroom.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Wall01.png
+- Assets/AB_Res/Scenes_1/Textures/Sprite/Dungeon_Tileset.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_05.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_6.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0003_\u56FE\u5C42-1-\u62F7\u8D1D-15.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0016_\u56FE\u5C42-1-\u62F7\u8D1D-23.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_5.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/Enemy.png
+- Assets/AB_Res/Scenes_1/Textures/Other/Dust Particle.png
+- Assets/AB_Res/Scenes_1/Textures/Object/StonePillar/stonePillar_1.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0003.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_3.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkStart/walkStart-0004.png
+- Assets/AB_Res/Scenes_1/Textures/Object/StonePillar/stoneWall_1.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase07.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/EnterWalk/PinkEyeEnterWalk_2.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Brown.png
+- Assets/AB_Res/Scenes_1/Textures/Other/Shadow.png
+- Assets/AB_Res/Scenes_1/Textures/UI/Object/BloodBlot.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/Bat-Attacking.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase13.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase06.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Jump/Jump.png
+- Assets/AB_Res/Scenes_1/Textures/Object/Stones/stone_1.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0022_\u56FE\u5C42-1-\u62F7\u8D1D-9.png"
+- Assets/AB_Res/Scenes_1/Textures/Object/TestSkill.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/enemy-deadth.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Hurt/PinkEyeHurt_2.png
+- Assets/AB_Res/Scenes_1/Textures/UI/joy/MyJoy.png
+- Assets/AB_Res/Scenes_1/Textures/Other/Transition.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEye_Float.anim
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0001.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase12.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_2.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/Bat-Attacking_left.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase14.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_03.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEye_Death.anim
+- Assets/AB_Res/Scenes_1/Textures/Sprite/A2B8DA09588432C641EA1A19E3A4C4B8.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase05.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_06.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0001_\u56FE\u5C42-1-\u62F7\u8D1D-12.png"
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase08.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/Bat/enemy-death.png
+- Assets/AB_Res/Scenes_1/Textures/UI/ShortCut/ShortCutBackGround.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase17.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_7.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0005.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_4.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_7.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_4.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0017_\u56FE\u5C42-1-\u62F7\u8D1D-22.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_1.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0012_\u56FE\u5C42-1-\u62F7\u8D1D-31.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Hurt/PinkEyeHurt_3.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Bobble/SlimeBobble1.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_09.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0002_\u56FE\u5C42-1-\u62F7\u8D1D-11.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkStart/walkStart-0003.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_4.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Death/PinkEyeDeath_2.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Desappearing (96x96).png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Grasses/grass_2.png
+- Assets/AB_Res/Scenes_1/Textures/Background/Purple.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0018_\u56FE\u5C42-1-\u62F7\u8D1D-21.png"
+- Assets/AB_Res/Scenes_1/Textures/Sprite/effects.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0004_\u56FE\u5C42-1-\u62F7\u8D1D-18.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0011_\u56FE\u5C42-1-\u62F7\u8D1D-30.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0007_\u56FE\u5C42-1-\u62F7\u8D1D-14.png"
+- Assets/AB_Res/Scenes_1/Textures/UI/Button/CloseButton_2.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/Sallow.anim
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Jump/JumpDirect.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase01.png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_04.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0020_\u56FE\u5C42-1-\u62F7\u8D1D-20.png"
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0014_\u56FE\u5C42-1-\u62F7\u8D1D-25.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkEnd/WalkEnd-0008.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0001.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkEnd/WalkEnd-0006.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase16.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0002.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0003.png
+- Assets/AB_Res/Scenes_1/Textures/UI/ShortCut/ShortCutGrid.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Idle/Idle-0004.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkEnd/WalkEnd-0004.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/dash/SlimeDash-0005.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/WalkEnd/WalkEnd-0005.png
+- Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/Walk/Slime_Walk_2.png
+- Assets/AB_Res/Scenes_1/Textures/Other/Confetti (16x16).png
+- Assets/AB_Res/Scenes_1/Textures/Plants/Trees/tree_1/tree_1_08.png
+- "Assets/AB_Res/Scenes_1/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0006_\u56FE\u5C42-1-\u62F7\u8D1D-17.png"
+- Assets/AB_Res/Scenes_1/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_6.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase18.png
+- Assets/AB_Res/Scenes_1/Textures/UI/Button/AttackButton1.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase20.png
+- Assets/AB_Res/Scenes_1/Textures/Object/NormalRewardCase/RewardCase15.png
+Dependencies:
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_1/animations.ab
