@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 69500861971963794}
   - component: {fileID: 69500861971963795}
   - component: {fileID: 5561261717963382153}
-  - component: {fileID: 69500861971963792}
+  - component: {fileID: 5680073186986664083}
   - component: {fileID: 597496833}
   m_Layer: 0
   m_Name: SlimeA
@@ -266,7 +266,7 @@ MonoBehaviour:
   groundChecks:
   - {fileID: 4103874612713433592}
   - {fileID: 1466625756}
---- !u!114 &69500861971963792
+--- !u!114 &5680073186986664083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 69500860600587845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eabe1bc3afd22841b59415247a4d791, type: 3}
+  m_Script: {fileID: 11500000, guid: 2224df2cef99aed4ebff1056eed56d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   chParameter:
@@ -291,8 +291,6 @@ MonoBehaviour:
     BeAttacked: BeAttacked
     FindTarget: FindTarget
   Speed: 8
-  AddSpeed: 0.5
-  JumpForce: 8
   Hp: 10
   maxHp: 10
   Sp: 10
@@ -301,7 +299,9 @@ MonoBehaviour:
   basedefence: 10
   attackInterval: 10
   attackDistance: 10
-  scoutDistance: 0
+  scoutDistance: 10
+  AddSpeed: 0.5
+  JumpForce: 8
 --- !u!61 &597496833
 BoxCollider2D:
   m_ObjectHideFlags: 0

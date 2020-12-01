@@ -32,7 +32,7 @@ namespace AI.FSM
         [HideInInspector]
         public Animator anim;
         [HideInInspector]
-        public CharaterStatus chStatus;
+        public CharacterStatus chStatus;
         [HideInInspector]
         public CharacterMotor chMotor;
 
@@ -69,7 +69,7 @@ namespace AI.FSM
         public void InitComponent()
         {
             anim = GetComponentInChildren<Animator>();
-            chStatus = GetComponent<CharaterStatus>();
+            chStatus = GetComponent<CharacterStatus>();
             chMotor = GetComponent<CharacterMotor>();
         }
         void Update()

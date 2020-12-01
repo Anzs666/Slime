@@ -62,24 +62,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AssetBundleFramework\ABDefine.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\ABManifestLoader.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\ABRelation.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\AssetBundleMgr.cs" />
     <Compile Include="Assets\Scripts\AssetBundleFramework\AssetLoader.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\MultiABMgr.cs" />
     <Compile Include="Assets\Scripts\AssetBundleFramework\SingleABLoader.cs" />
+    <Compile Include="Assets\Scripts\AssetBundleFramework\Tests\TestABFramework.cs" />
     <Compile Include="Assets\Scripts\AssetBundleFramework\Tests\TestAb.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleFramework\Tools\ABDefine.cs" />
-    <Compile Include="Assets\Scripts\AssetBundleFramework\Tools\ABManifestLoader.cs" />
     <Compile Include="Assets\Scripts\AssetBundleFramework\Tools\PathTool.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollowWithCursor.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorUI.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\CharacterAnimationParameter.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\CharacterInputController_2D.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\CharacterMotor.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\CharacterSelector.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\CharaterStatus.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterAnimationParameter.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterInputController_2D.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterMotor.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterSelector.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterStatus.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterJump.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterWalk.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerStatus.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMStateID.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMTriggerID.cs" />
     <Compile Include="Assets\Scripts\FSM\FSMBase.cs" />
@@ -369,6 +374,12 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras">
+      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>F:/Unity/slim/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>

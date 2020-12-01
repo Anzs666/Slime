@@ -17,7 +17,8 @@ namespace ARPG.Character
         public float MAXMOVESpeed { get => MAXMoveSpeed; }
         private float rotateSpeed = 0f;
         //跳跃
-
+        private int jumpCout=0;
+        private int jumpMaxCout = 1;
         private float jumpForce = 0f;
         private float fallMultiplier = 2.5f;
         private float lowJumpMultiplier = 2f;
@@ -28,13 +29,19 @@ namespace ARPG.Character
         {
             Fall();
             CheckGround();
+            //计数为0
+            if (IsGround)
+            {
+                jumpCout = 0;
+            }
         }
-        public override void InitMotor(CharaterStatus status)
+        public override void InitMotor(CharacterStatus status)
         {
-            base.InitMotor(status);
-            this.addSpeed = status.AddSpeed;
-            this.MAXMoveSpeed = status.Speed;
-            this.jumpForce = status.JumpForce;
+            PlayerStatus _status = status as PlayerStatus;
+            this.addSpeed = _status.AddSpeed;
+            this.MAXMoveSpeed = _status.Speed;
+            this.jumpForce = _status.JumpForce;
+            this.jumpMaxCout = _status.JumpMaxCout;
         }
 
         private void Fall()
@@ -57,6 +64,12 @@ namespace ARPG.Character
             {
                 rigb2D.velocity = new Vector2(rigb2D.velocity.x, jumpForce);
             }
+            else if (jumpCout < jumpMaxCout-1)
+            {
+                //Debug.Log(jumpCout);
+                rigb2D.velocity = new Vector2(rigb2D.velocity.x, jumpForce);
+                jumpCout++;
+            }
         }
         //水平移动
         public void HorizontalMove(float dx)
@@ -74,7 +87,15 @@ namespace ARPG.Character
         {
             throw new System.NotImplementedException();
         }
-
+        public void ResetJumpMaxCout(CharacterStatus status)
+        {
+            PlayerStatus _status = status as PlayerStatus;
+            jumpMaxCout = _status.JumpMaxCout;
+        }
+        public void AddJumpMaxCout(int num)
+        {
+            jumpMaxCout += num;
+        }
         public void SetJumpForce(float force)
         {
             jumpForce = force;

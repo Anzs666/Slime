@@ -12,8 +12,8 @@ namespace ARPG.Skill
         {
             foreach (var t in deployer.SkillData.attackTargets)
             {
-                float damage= deployer.SkillData.atkRatio*0.01f* deployer.SkillData.owner.transform.GetComponent<CharaterStatus>().baseATK;
-                t.GetComponent<CharaterStatus>().Hp -= damage;
+                float damage= deployer.SkillData.atkRatio*0.01f* deployer.SkillData.owner.transform.GetComponent<CharacterStatus>().baseATK;
+                t.GetComponent<CharacterStatus>().Hp -= damage;
                 //t.GetComponent<DamageNumGenerator>().CreateDamageNum(damage,1f,0.5f);
                 t.GetComponent<Enemy>().SetHurtFlash();
             }

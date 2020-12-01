@@ -40,7 +40,7 @@ namespace ARPG.Skill
         {
             SkillData data = SkillFind(s => s.skillID == id);
             //获取当前角色法力值
-            float sp = GetComponent<CharaterStatus>().Sp;
+            float sp = GetComponent<CharacterStatus>().Sp;
             //判断条件
             if (data != null && data.coolRemain <= 0 && data.costSp <= sp)
                 return data;

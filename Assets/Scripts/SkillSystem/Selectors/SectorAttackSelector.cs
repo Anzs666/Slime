@@ -27,7 +27,7 @@ namespace ARPG.Skill
             );
            
             //筛选出活的敌人
-            targets = targets.FindAll(t => t.GetComponent<CharaterStatus>().Hp > 0);
+            targets = targets.FindAll(t => t.GetComponent<CharacterStatus>().Hp > 0);
             //返回目标（单攻/群攻）
             Transform[] result = targets.ToArray();
             if (skillData.attackType == SkillAttackType.Group||result.Length==0)

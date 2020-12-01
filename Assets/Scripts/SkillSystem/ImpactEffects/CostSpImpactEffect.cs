@@ -9,7 +9,7 @@ namespace ARPG.Skill
     {
         public void Execute(SkillDeployer deployer)
         {
-            var status = deployer.SkillData.owner.GetComponent<CharaterStatus>();
+            var status = deployer.SkillData.owner.GetComponent<CharacterStatus>();
             status.Sp -= deployer.SkillData.costSp;
         }
 

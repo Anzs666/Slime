@@ -5,7 +5,9 @@ namespace ARPG.Character.Function
 {
     public interface ICharacterJump
     {
-        void SetJumpForce(float force);     
+        void ResetJumpMaxCout(CharacterStatus status);
+        void AddJumpMaxCout(int num);
+        void SetJumpForce(float force);
         void Jump();
     }
 }

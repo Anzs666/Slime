@@ -7,7 +7,7 @@ namespace Common
     //单例模板类
     public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>//T必须继承了MonoSingleton
     {
-        private static T _instance;
+        protected static T _instance;
 
         public static T Instance
         {
