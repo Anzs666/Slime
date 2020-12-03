@@ -74,6 +74,7 @@
     <Compile Include="Assets\2d-extras\Runtime\Tiles\RuleTile\RuleTile.cs" />
     <Compile Include="Assets\2d-extras\Runtime\Tiles\TerrainTile\TerrainTile.cs" />
     <Compile Include="Assets\2d-extras\Runtime\Tiles\WeightedRandomTile\WeightedRandomTile.cs" />
+    <None Include="Assets\2d-extras\Runtime\Brushes\TintedTilemap.shader" />
     <Reference Include="UnityEngine">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

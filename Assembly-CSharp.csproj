@@ -118,12 +118,12 @@
     <Compile Include="Assets\Scripts\Item\ShortCut\ShortCutItemBase.cs" />
     <Compile Include="Assets\Scripts\Item\ShortCut\ShortCutManager.cs" />
     <Compile Include="Assets\Scripts\Level\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room1\Room.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room1\RoomGenerator.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room1\WallMap.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room2\Room.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room2\RoomDemoGenerator.cs" />
-    <Compile Include="Assets\Scripts\Level\Room\Room2\RoomGenerator.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomCellSMGenerator.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomManager.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomMap.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Room3.0\Room.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Room3.0\RoomGenerator.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Tools\CellSM.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\SkillSystem\Common\CharacterSkillManager.cs" />
     <Compile Include="Assets\Scripts\SkillSystem\Common\CharacterSkillSystem.cs" />
@@ -374,12 +374,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>F:/Unity/slim/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
@@ -808,7 +802,16 @@
       <HintPath>F:/Unity/slim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{711DAC97-1D3F-7412-FC56-DD6A3DC6B241}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{B84BC9C2-6EEC-75A8-FAF9-70E961F97386}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -250,12 +250,6 @@
     <Reference Include="UnityEditor">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>F:/Unity/slim/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
     </Reference>
@@ -717,6 +711,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{9E712CF0-97AF-AC87-1D40-EB1656D87A0E}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{711DAC97-1D3F-7412-FC56-DD6A3DC6B241}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{B84BC9C2-6EEC-75A8-FAF9-70E961F97386}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
