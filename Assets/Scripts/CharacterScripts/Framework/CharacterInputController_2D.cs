@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ARPG.Skill;
-using UGUI.Framework;
 using UGUI.Package;
 
 namespace ARPG.Character
@@ -10,7 +9,7 @@ namespace ARPG.Character
     /// <summary>
     /// 角色控制器
     /// </summary>
-    [RequireComponent(typeof(CharacterMotor), typeof(CharacterStatus))]//依赖组件
+    [RequireComponent(typeof(PlayerMotor), typeof(PlayerStatus))]//依赖组件
     public class CharacterInputController_2D : MonoBehaviour
     {
 
@@ -30,32 +29,32 @@ namespace ARPG.Character
             colllider = GetComponent<BoxCollider2D>();
         }
 
-        public void OnTriggerStay2D(Collider2D other)
-        {
-            //判断碰撞物体的种类
-            if (other.tag == "Item")
-            {
-                Item aimItem = other.GetComponent<ItemGameEntity>().item;
-                switch (aimItem.itemType)
-                {
-                    case ItemType.Equipment:
-                        break;
-                    case ItemType.SkillItem://添加到快捷栏中
-                        Debug.Log("按E捡起");
-                        if (Input.GetKeyDown(KeyCode.E))
-                        {
-                            UIPCBattleWindow uIPCBattleWindow = (UIPCBattleWindow)UIManager.Instance.GetWindow(UIWindowType.PCBattle);
-                            uIPCBattleWindow.ShortCutAddItem(aimItem);
-                            Destroy(other.gameObject);
-                        }
-                        break;
-                    case ItemType.Disposable:
-                    default:
-                        break;
-                }
+        //public void OnTriggerStay2D(Collider2D other)
+        //{
+        //    //判断碰撞物体的种类
+        //    if (other.tag == "Item")
+        //    {
+        //        Item aimItem = other.GetComponent<ItemGameEntity>().item;
+        //        switch (aimItem.itemType)
+        //        {
+        //            case ItemType.Equipment:
+        //                break;
+        //            case ItemType.SkillItem://添加到快捷栏中
+        //                Debug.Log("按E捡起");
+        //                if (Input.GetKeyDown(KeyCode.E))
+        //                {
+        //                   // UIPCBattleWindow uIPCBattleWindow = (UIPCBattleWindow)UIManager.Instance.GetWindow(UIWindowType.PCBattle);
+        //                   // uIPCBattleWindow.ShortCutAddItem(aimItem);
+        //                   // Destroy(other.gameObject);
+        //                }
+        //                break;
+        //            case ItemType.Disposable:
+        //            default:
+        //                break;
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
 #if UNITY_EDITOR || UNITY_STANDALONE
         //在编译器下||pc下   

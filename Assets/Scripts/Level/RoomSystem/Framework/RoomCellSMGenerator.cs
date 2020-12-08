@@ -18,8 +18,8 @@ namespace Common.Helper.RandomRoomSystem
         private Tilemap aimRoomMap;
         public RuleTile platRuleTile;
         //房间宽度
-        private const int ROOM_MAXWIDTH = 100;
-        private const int ROOM_MAXHEIGHT = 100;
+        private const int ROOM_MAXWIDTH = 50;
+        private const int ROOM_MAXHEIGHT = 50;
         private const int WALLRATE = 45;
         private RoomMap rMap;
         //初始化

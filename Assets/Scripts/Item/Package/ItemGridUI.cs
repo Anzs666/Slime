@@ -14,7 +14,7 @@ namespace UGUI.Package
     {
         public Item item;//存放物品信息
         public int gridIndex;//表示拖动前的父容器格子
-        private UIPackageWindow PackageSp;
+       // private UIPackageWindow PackageSp;
 
         public void SetImage(Sprite sprite)
         {
@@ -27,7 +27,7 @@ namespace UGUI.Package
         
         void Start()
         {
-            PackageSp = GameObject.Find("UIPackageWindow(Clone)").GetComponent<UIPackageWindow>();
+            //PackageSp = GameObject.Find("UIPackageWindow(Clone)").GetComponent<UIPackageWindow>();
         }
 
         //public void OnBeginDrag(PointerEventData eventData)

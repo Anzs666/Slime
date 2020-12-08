@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Common;
-public class GameController :MonoSingleton<GameController>
+namespace SlimeGame
 {
-    //游戏开始前
-    public void Start()
+    public class GameController : MonoSingleton<GameController>
     {
-        //UIManager.instance.GetWindow<>().setinvisible(false);
-    }
+        //游戏开始前
+        public void Start()
+        {
+            //UIManager.instance.GetWindow<>().setinvisible(false);
+        }
 
-    //游戏开始
-    public void GameStart()
-    {
+        //游戏开始
+        public void GameStart()
+        {
 
+        }
     }
 }
