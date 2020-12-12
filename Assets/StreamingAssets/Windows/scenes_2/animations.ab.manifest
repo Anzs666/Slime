@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 2259768067
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0f8ea2109e5d1f3e787dc98d2f372762
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 75c4cf5a811febcff373a7691b935ca2
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/EnemyAttackingLeft.anim
+- Assets/AB_Res/Scenes_2/Animations/Object/Case/RewardCase01.controller
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_Top.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directTop.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directUp_1.anim
+- Assets/AB_Res/Scenes_2/Animations/Slimer/Slimer_Idle.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_up_1.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_down_2.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directUp_3.anim
+- Assets/AB_Res/Scenes_2/Animations/Slimer/Slimer_Walk.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directDown_1.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_up_3.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/EnemyAttackingRight.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/EnemyAppear.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directEnd.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_down_4.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Idle.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_down_3.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/Enemy01.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directDown_2.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/SlimeChangeSlimer.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Walk.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/Enemydeath.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_up_4.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Dash.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_up_2.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Walk_End.anim
+- Assets/AB_Res/Scenes_2/Animations/Object/Case/RewardCase_Open.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/Enemy_0.controller
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directDown_3.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_End.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_down_1.anim
+- Assets/AB_Res/Scenes_2/Animations/FlyEnemy/EnemyFindTarget.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Walk_Start.anim
+- Assets/AB_Res/Scenes_2/Animations/SlimeSkill/Jump/Jump_directUp_2.anim
+Dependencies:
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/textures.ab

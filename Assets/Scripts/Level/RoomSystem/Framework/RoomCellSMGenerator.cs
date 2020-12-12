@@ -26,12 +26,21 @@ namespace Common.Helper.RandomRoomSystem
         public override void Init()
         {
             base.Init();
+            if (aimRoomMap == null) { }
+            if (platRuleTile == null) { }
+            Debug.Log(10);
             aimRoomMap = tile.GetComponent<Tilemap>();
             rMap = new RoomMap(ROOM_MAXWIDTH, ROOM_MAXHEIGHT);
+        }
+        /// <summary>
+        /// 创建细胞地图
+        /// </summary>
+        public void CreateCellMap()
+        {
             FillAllWall();
-            rMap = CellSM.RandomRoom(rMap, WALLRATE);           
+            rMap = CellSM.RandomRoom(rMap, WALLRATE);
             for (int j = 0; j < 2; j++)
-            {     
+            {
                 for (int i = 0; i < 2; i++)
                     rMap = CellSM.CellAM(rMap);
                 for (int x = 0; x < 4; x++)

@@ -155,6 +155,8 @@
     <Compile Include="Assets\Scripts\Tools\MyHelper\Common\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Tools\MyHelper\Common\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\Tools\MyHelper\Common\TransformHelper.cs" />
+    <Compile Include="Assets\Scripts\UIMVC\Command\GameStartCommand.cs" />
+    <Compile Include="Assets\Scripts\UIMVC\Command\RestartCommand.cs" />
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\PureMVCFW\Core\Controller.cs" />
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\PureMVCFW\Core\Model.cs" />
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\PureMVCFW\Core\View.cs" />
@@ -197,11 +199,12 @@
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\SUIFW\Test\Test.cs" />
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\SUIFW\UIManager.cs" />
     <Compile Include="Assets\Scripts\UIMVC\FrameWork\SUIFW\UIType.cs" />
+    <Compile Include="Assets\Scripts\UIMVC\View\StartUIForm.cs" />
     <None Include="Assets\Scripts\Tools\JSON\readme.txt" />
-    <None Include="Assets\AB_Res\Scenes_1\Shaders\Pixel.shader" />
+    <None Include="Assets\AB_Res\Scenes_2\Shaders\Pixel.shader" />
     <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />
     <None Include="Assets\StreamingAssets\ConfigMap.txt" />
-    <None Include="Assets\AB_Res\Scenes_1\Shaders\test.shader" />
+    <None Include="Assets\AB_Res\Scenes_2\Shaders\test.shader" />
     <None Include="Assets\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>E:/UnityEditor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

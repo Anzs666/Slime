@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Common;
+using SUIFW;
+using ABFW;
+
 namespace SlimeGame
 {
     public class GameController : MonoSingleton<GameController>
     {
+        string uiFormName = "StartUIForm.prefab";
+        GameObject UIForm;
         //游戏开始前
         public void Start()
         {
-            //UIManager.instance.GetWindow<>().setinvisible(false);
-        }
-
-        //游戏开始
-        public void GameStart()
-        {
-
+            UIManager.GetInstance().ShowUIForms("StartUIForm");
         }
     }
 }

@@ -1,0 +1,101 @@
+ManifestFileVersion: 0
+CRC: 3612581258
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1ba9e07cebb5eca4da837b12e457f66c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d2b5316edaf8e87c5d4fdcaaab19a5ea
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 62
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c340aef2f2c173945ae7099f0111f44b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76ec956499210784cbef6a8fd76b279d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 296177d47ba286946ae1c521a813d705, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17435c76347e9e746b081b8ae2208a74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 51c505d8bd745184099dcb90e1b7c37c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 366976b9c5ac74b4aab4e708477ee63f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2224df2cef99aed4ebff1056eed56d79, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5537329ce0cf2b34da53ee009a3ba777, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3eabe1bc3afd22841b59415247a4d791, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f021530d13b70e442adab5827b6994fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 77a9c76fab9ce1b4fac3e8d62ca61d8b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LTR.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LT.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Items/BatWing.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Characters/EnemyPrefab/FlyEnemy.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Objects/NormalRewardCase/RewardCase01.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_BLT.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LRTB.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/SlimeSkills/01Slash.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LR.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_RBL.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_RB.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomBlocks/Terrain (16x16)_2.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LB.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/UI/InspectorUIForm.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Characters/EnemyPrefab/enemy-deadth_0.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomBlocks/Terrain (16x16)_0.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Characters/SlimeA.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/SlimeSkills/SlimeSallow.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_RT.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Characters/EnemyPrefab/enemy-Appear.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_L.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_TRB .prefab
+- Assets/AB_Res/Scenes_2/Prefabs/SlimeSkills/SlimeBobble1.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_T.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_R.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_B.prefab
+- Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_TB.prefab
+Dependencies:
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/animations.ab
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/phymaterials.ab
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/shaders.ab
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/textures.ab

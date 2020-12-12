@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3790590625
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ff33d9031c53d3bc43263769b3c5ab8d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0314674c095a731c5b1e6f91323ca13d
+HashAppended: 0
+ClassTypes:
+- Class: 62
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scenes_2/PhyMaterials/PlayerPhyMaterial.physicsMaterial2D
+- Assets/AB_Res/Scenes_2/PhyMaterials/EnemyPhsMaterial.physicsMaterial2D
+Dependencies: []

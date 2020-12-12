@@ -73,7 +73,7 @@ namespace SUIFW
         public const string SYS_PATH_CONFIG_INFO = "SysConfigInfo";
 
         /* 标签常量 */
-        public const string SYS_TAG_CANVAS = "_TagCanvas";
+        public const string SYS_TAG_CANVAS = "TagCanvas";
         /* 节点常量 */
         public const string SYS_NORMAL_NODE = "Normal";
         public const string SYS_FIXED_NODE = "Fixed";

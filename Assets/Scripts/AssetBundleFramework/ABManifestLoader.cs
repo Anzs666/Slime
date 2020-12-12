@@ -48,7 +48,6 @@ namespace ABFW{
         {           
             using (WWW www = new WWW(_StrManifestPath))
             {
-                Debug.Log(isLoadFinish);
                 yield return www;
                 if (www.progress >= 1)
                 {
@@ -61,7 +60,6 @@ namespace ABFW{
                         _ManifestObj = _AbReadManifest.LoadAsset(ABDefine.ASSETBUNDLE_MANIFEST) as AssetBundleManifest;
                         //本次读取完成
                         isLoadFinish = true;
-                        Debug.Log(isLoadFinish);
                     }
                     else
                     {

@@ -46,6 +46,7 @@ namespace SUIFW
 
         /// <summary>
         /// 调用资源（带对象缓冲技术）
+        /// Json调用UI资源
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="path"></param>

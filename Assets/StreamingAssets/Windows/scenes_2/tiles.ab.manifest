@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1660619807
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b265f8792f6c98a9696479e8c3442238
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d2ced22cb1332e9f4e0874988d40458e
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scenes_2/Tiles/PlatformRuleTile.asset
+Dependencies:
+- F:/Unity/slim/Assets/StreamingAssets/Windows/scenes_2/textures.ab
