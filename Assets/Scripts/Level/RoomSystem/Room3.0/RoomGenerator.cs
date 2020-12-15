@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Common;
 
-namespace Common.Helper.RandomRoomSystem
+namespace Common.Helper.RoomSystem
 {
     //父类房间生成器，连接房间类型资源库
     //用于区分地形和生成方法

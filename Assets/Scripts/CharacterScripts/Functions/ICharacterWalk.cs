@@ -7,7 +7,5 @@ namespace ARPG.Character.Function
     {
         //移动
         void HorizontalMove(float addSpeed);
-        void DirectMove(Vector2 direction);
-
     }
 }

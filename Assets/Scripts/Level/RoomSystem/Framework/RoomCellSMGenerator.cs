@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;//
 
-namespace Common.Helper.RandomRoomSystem
+namespace Common.Helper.RoomSystem
 {
     /// <summary>
     /// 该类使用单例模式
@@ -28,9 +28,19 @@ namespace Common.Helper.RandomRoomSystem
             base.Init();
             if (aimRoomMap == null) { }
             if (platRuleTile == null) { }
-            Debug.Log(10);
             aimRoomMap = tile.GetComponent<Tilemap>();
             rMap = new RoomMap(ROOM_MAXWIDTH, ROOM_MAXHEIGHT);
+            //CreateCellMap();
+            SetBroad();
+            RefrashMap();
+        }
+        /// <summary>
+        /// 获得地图
+        /// </summary>
+        /// <returns></returns>
+        public RoomMap GetRoom()
+        {
+            return rMap;
         }
         /// <summary>
         /// 创建细胞地图
@@ -47,7 +57,7 @@ namespace Common.Helper.RandomRoomSystem
                     rMap = CellSM.CellAM2(rMap);
             }
             rMap = CellSM.CellAM(rMap);
-            RefrashMap();
+
         }
         /// <summary>
         /// 改变地图
@@ -66,6 +76,18 @@ namespace Common.Helper.RandomRoomSystem
                         aimRoomMap.SetTile(position, platRuleTile);
                     }
                 }
+        }
+        /// <summary>
+        /// 设置边界
+        /// </summary>
+        public void SetBroad()
+        {
+            for (int i = 0; i < rMap.Height; i++)
+                for (int j = 0; j < rMap.Width; j++)
+                    if(i==0||i == rMap.Height-1||j==0||j== rMap.Width-1||(i>=4&&i<=8&& j >= 4 && j <= 8)|| (i >= 10 && j >= 10 && j <= 20))
+                        rMap.Map[i, j] = GridType.Wall;
+                    else
+                        rMap.Map[i, j] = GridType.Air;
         }
         /// <summary>
         /// 填充所有墙

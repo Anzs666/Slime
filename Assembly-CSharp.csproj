@@ -84,10 +84,13 @@
     <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterMotor.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Framework\CharacterStatus.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterFly.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterJump.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Functions\ICharacterWalk.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerMotor.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\Player\PlayerStatus.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Motors\FlyCharacterMotor.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Motors\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Motors\WalkCharacterMotor.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Status\PlayerStatus.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMStateID.cs" />
     <Compile Include="Assets\Scripts\FSM\Common\FSMTriggerID.cs" />
     <Compile Include="Assets\Scripts\FSM\FSMBase.cs" />
@@ -128,6 +131,7 @@
     <Compile Include="Assets\Scripts\Level\RoomSystem\Room3.0\Room.cs" />
     <Compile Include="Assets\Scripts\Level\RoomSystem\Room3.0\RoomGenerator.cs" />
     <Compile Include="Assets\Scripts\Level\RoomSystem\Tools\CellSM.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Tools\SearchRoadHelper.cs" />
     <Compile Include="Assets\Scripts\SkillSystem\Common\CharacterSkillManager.cs" />
     <Compile Include="Assets\Scripts\SkillSystem\Common\CharacterSkillSystem.cs" />
     <Compile Include="Assets\Scripts\SkillSystem\Common\SelectorType.cs" />

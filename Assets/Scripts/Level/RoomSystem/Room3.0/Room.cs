@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Common.Helper.RandomRoomSystem
+namespace Common.Helper.RoomSystem
 {
     public class Room : MonoBehaviour
     {

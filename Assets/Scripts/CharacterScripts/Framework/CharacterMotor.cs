@@ -7,7 +7,7 @@ namespace ARPG.Character
     /// <summary>
     ///角色马达
     /// </summary>
-    public class CharacterMotor : MonoBehaviour
+    public abstract class CharacterMotor : MonoBehaviour
     {
         public Transform[] groundChecks;
         private bool isGround = true;
@@ -24,20 +24,30 @@ namespace ARPG.Character
         {
             rigb2D = GetComponent<Rigidbody2D>();
         }
-
-        public virtual void InitMotor(CharacterStatus _status){
-        }
-
+        /// <summary>
+        /// 初始化驱动
+        /// </summary>
+        /// <param name="_status"></param>
+        public abstract void InitMotor(CharacterStatus _status);
+        /// <summary>
+        /// 设置速度
+        /// </summary>
+        /// <param name="velocity"></param>
         public void SetVelocity(Vector2 velocity)
         {
             rigb2D.velocity = velocity;
         }
+        /// <summary>
+        /// 获得速度
+        /// </summary>
+        /// <returns></returns>
         public Vector2 GetVelocity()
         {
             return rigb2D.velocity;
         }
-
-        //判断落地
+        /// <summary>
+        /// 判断落地
+        /// </summary>
         protected void CheckGround()
         {
             for (int i = 0; i < groundChecks.Length; i++)
