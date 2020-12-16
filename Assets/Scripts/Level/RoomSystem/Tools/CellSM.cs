@@ -19,7 +19,7 @@ namespace Common.Helper.RoomSystem
             for (int i = x - r; i <= x + r; i++)
                 for (int j = y - r; j <= y + r; j++)
                     if (i >= 0 && i < map.Height && j >= 0 && j < map.Width &&
-                        !(i == x && j == y) && map.Map[i, j] == GridType.Wall)//防止超界
+                        !(i == x && j == y) && map.Map[i, j].walkAble == false)//防止超界
                         wallNum++;
             return wallNum;
         }
@@ -31,15 +31,15 @@ namespace Common.Helper.RoomSystem
         {
             for (int i = 1; i < map.Height - 1; i++)
                 for (int j = 1; j < map.Width - 1; j++)
-                    if (map.Map[i, j] == GridType.Wall)//如果该单元格是墙
+                    if (map.Map[i, j].walkAble==false)//如果该单元格是墙
                     {
                         if (CheckNeighborWall(map, i, j, 1) < 4)//且周围一圈的墙数量少于4
-                            map.Map[i, j] = GridType.Air;//变成空气
+                            map.Map[i, j].walkAble = true;//变成空气
                     }
-                    else if (map.Map[i, j] == GridType.Air)//如果该单元格是空气
+                    else if (map.Map[i, j].walkAble == true)//如果该单元格是空气
                     {
                         if (CheckNeighborWall(map, i, j, 1) >= 5)//且周围一圈的墙数量大于5
-                            map.Map[i, j] = GridType.Wall;//变成墙
+                            map.Map[i, j].walkAble = false;//变成墙
                     }
             return map;
         }
@@ -53,9 +53,8 @@ namespace Common.Helper.RoomSystem
         {
             for (int j = 1; j < map.Width - 1; j++)
                 for (int i = 1; i < map.Height - 1; i++)
-                    if ((map.Map[i, j] == GridType.Wall || map.Map[i, j] == GridType.Air) &&
-                        (CheckNeighborWall(map, i, j, 1) >= 5||CheckNeighborWall(map, i, j, 2) < 5))
-                            map.Map[i, j] = GridType.Wall;
+                    if (CheckNeighborWall(map, i, j, 1) >= 5||CheckNeighborWall(map, i, j, 2) < 5)
+                            map.Map[i, j].walkAble = false;
             return map;
         }
         /// <summary>
@@ -71,9 +70,9 @@ namespace Common.Helper.RoomSystem
                 {
                     currentNum = Random.Range(0, 100);
                     if (currentNum <= wallRate)
-                        map.Map[i, j] = GridType.Wall;
+                        map.Map[i, j].walkAble = false;
                     else
-                        map.Map[i, j] = GridType.Air;
+                        map.Map[i, j].walkAble = true;
                 }
             return map;
         }

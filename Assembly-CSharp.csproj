@@ -125,7 +125,7 @@
     <Compile Include="Assets\Scripts\Item\ShortCut\ShortCutItemBase.cs" />
     <Compile Include="Assets\Scripts\Item\ShortCut\ShortCutManager.cs" />
     <Compile Include="Assets\Scripts\Level\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomCellSMGenerator.cs" />
+    <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\Grid.cs" />
     <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomManager.cs" />
     <Compile Include="Assets\Scripts\Level\RoomSystem\Framework\RoomMap.cs" />
     <Compile Include="Assets\Scripts\Level\RoomSystem\Room3.0\Room.cs" />

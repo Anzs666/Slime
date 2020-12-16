@@ -14,30 +14,24 @@ namespace gojiu.slim
     public class Enemy : MonoBehaviour
     {
         protected SpriteRenderer sp;
-        public GameObject roadSign;
         private CharacterStatus status;
         private FlyCharacterMotor motor;
         private RoomMap map;
-        private List<Vector2> followRoad;
+        private List<Common.Helper.RoomSystem.Grid> followRoad;
         protected void Start()
         {
             sp = GetComponent<SpriteRenderer>();
             status = GetComponent<CharacterStatus>();
             motor = GetComponent<FlyCharacterMotor>();
             motor.InitMotor(status);
-            map = RoomCellSMGenerator.Instance.GetRoom();
-            SetFollowRoad();
+            map = RoomManager.Instance.GetRoom();
+           
 
         }
         private void SetFollowRoad()
         {
             Vector2 aimPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-            followRoad = SearchRoadHelper.AStar(map, transform.position, aimPos);
-            foreach (var i in followRoad)
-            {
-                GameObject s = Instantiate(roadSign);
-                s.transform.position = i + new Vector2(0.5f, 0.5f);
-            }
+            followRoad = SearchRoadHelper.AStar(transform.position, aimPos);
         }
         private IEnumerator MoveToPos(Vector2 pos,Func<int> complete)
         {
@@ -51,8 +45,7 @@ namespace gojiu.slim
         int i = 0;
         private void Update()
         {
-            StartCoroutine(MoveToPos(followRoad[i],()=> { return i++; }));
-            Debug.Log(i);
+            SetFollowRoad();
         }
         //设置受伤动画
         public void SetHurtFlash()
@@ -64,6 +57,18 @@ namespace gojiu.slim
         {
             yield return new WaitForSeconds(delayTime);
             sp.material.SetFloat("_FlashAmount", 0);
+        }
+        private void OnDrawGizmos()
+        {
+            Gizmos.DrawWireCube(RoomManager.Instance.tile.transform.position, new Vector3(RoomManager.ROOM_MAXWIDTH, RoomManager.ROOM_MAXHEIGHT,1));
+            if (followRoad != null)
+            {
+                foreach (var grid in followRoad)
+                {
+                    Gizmos.color = Color.yellow;
+                    Gizmos.DrawCube(new Vector2(grid.x, grid.y), Vector3.one);
+                }
+            }
         }
     }
 }

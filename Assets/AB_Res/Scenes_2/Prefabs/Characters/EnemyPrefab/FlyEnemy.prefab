@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: 4350994290373685857}
   - component: {fileID: 6831457881840672709}
   - component: {fileID: 4350994290373685914}
-  - component: {fileID: 5987430515214350189}
   - component: {fileID: 4350994290373685915}
   - component: {fileID: 1342398502924671471}
   - component: {fileID: 1469434631425189677}
-  - component: {fileID: 5816039159246432332}
+  - component: {fileID: 1331998741362737196}
   m_Layer: 9
   m_Name: FlyEnemy
   m_TagString: Enemy
@@ -137,22 +136,6 @@ CircleCollider2D:
   m_Offset: {x: 0.0118999975, y: -0.0014071856}
   serializedVersion: 2
   m_Radius: 0.12562647
---- !u!58 &5987430515214350189
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4350994290373685856}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.24020772
 --- !u!50 &4350994290373685915
 Rigidbody2D:
   serializedVersion: 4
@@ -186,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c340aef2f2c173945ae7099f0111f44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roadSign: {fileID: 0}
 --- !u!114 &1469434631425189677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,8 +195,6 @@ MonoBehaviour:
     BeAttacked: BeAttacked
     FindTarget: FindTarget
   Speed: 0
-  AddSpeed: 0
-  JumpForce: 0
   Hp: 0
   maxHp: 0
   Sp: 0
@@ -222,7 +204,7 @@ MonoBehaviour:
   attackInterval: 0
   attackDistance: 0
   scoutDistance: 0
---- !u!114 &5816039159246432332
+--- !u!114 &1331998741362737196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,7 +213,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4350994290373685856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296177d47ba286946ae1c521a813d705, type: 3}
+  m_Script: {fileID: 11500000, guid: a0f51039bbc795e48a302f9a6bbe38a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   groundChecks: []

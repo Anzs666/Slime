@@ -7,7 +7,7 @@ namespace ARPG.Character
     /// <summary>
     ///角色马达
     /// </summary>
-    public abstract class CharacterMotor : MonoBehaviour
+    public class CharacterMotor : MonoBehaviour
     {
         public Transform[] groundChecks;
         private bool isGround = true;
@@ -28,7 +28,7 @@ namespace ARPG.Character
         /// 初始化驱动
         /// </summary>
         /// <param name="_status"></param>
-        public abstract void InitMotor(CharacterStatus _status);
+        public virtual void InitMotor(CharacterStatus _status) { }
         /// <summary>
         /// 设置速度
         /// </summary>
