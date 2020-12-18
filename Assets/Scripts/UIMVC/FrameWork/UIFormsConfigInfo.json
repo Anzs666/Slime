@@ -4,6 +4,10 @@
         {
             "Key": "StartUIForm",
             "Value": "Scenes_1\\Prefabs"
+        },
+        {
+            "Key": "LoadingUIForm",
+            "Value": "Scenes_3\\Prefabs"
         }
     ]
 }

@@ -12,7 +12,10 @@ namespace Common.Helper.RoomSystem
         /// <param name="startPos"></param>
         /// <param name="aimPos"></param>
         /// <returns></returns>
-        public static List<Grid> AStar(Vector2 startPos, Vector2 aimPos){          
+        public static List<Grid> AStar(Vector2 startPos, Vector2 aimPos){
+            ////相等返回
+            //if (RoomManager.Instance.GridFromWorldPoint(startPos) == RoomManager.Instance.GridFromWorldPoint(aimPos))
+            //    return null;
             Grid startGrid = RoomManager.Instance.GridFromWorldPoint(startPos);
             Grid aimGrid = RoomManager.Instance.GridFromWorldPoint(aimPos);      
             //Debug.Log("StartPos=(" + startGrid.x + ',' + startGrid.y+ "),AimPos=(" + aimGrid.x + ',' + aimGrid.y + ")");

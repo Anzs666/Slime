@@ -113,7 +113,9 @@ namespace Common.Helper.RoomSystem
         {
             for (int i = 0; i < rMap.Height; i++)
                 for (int j = 0; j < rMap.Width; j++)
-                    if (i == 0 || i == rMap.Height - 1 || j == 0 || j == rMap.Width - 1 || (i >= 4 && i <= 8 && j >= 4 && j <= 8) || (i >= 10 && i <= 20 && j >= 10 && j <= 20))
+                    if (i == 0 || i == rMap.Height - 1 || j == 0 || j == rMap.Width - 1 
+                        //|| (i>1&&(i >= 23|| i<=18) && j%3==0)
+                        )
                         rMap.Map[i, j] = new Grid(false, i, j);
                     else
                         rMap.Map[i, j] = new Grid(true, i, j);

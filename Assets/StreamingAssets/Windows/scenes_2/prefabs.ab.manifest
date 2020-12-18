@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3612581258
+CRC: 1811020615
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1ba9e07cebb5eca4da837b12e457f66c
+    Hash: 01421e863831145ff7e14ce6161ffb1a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d2b5316edaf8e87c5d4fdcaaab19a5ea
+    Hash: 81bc9e8cad71efbf38d269f930dabbc2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -36,13 +36,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 76ec956499210784cbef6a8fd76b279d, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 296177d47ba286946ae1c521a813d705, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 17435c76347e9e746b081b8ae2208a74, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 51c505d8bd745184099dcb90e1b7c37c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a0f51039bbc795e48a302f9a6bbe38a9, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 366976b9c5ac74b4aab4e708477ee63f, type: 3}
 - Class: 114
@@ -66,6 +66,7 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
+- Assets/AB_Res/Scenes_2/Prefabs/UI/RoadSign.prefab
 - Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LTR.prefab
 - Assets/AB_Res/Scenes_2/Prefabs/Rooms/RoomType/Room_LT.prefab
 - Assets/AB_Res/Scenes_2/Prefabs/Items/BatWing.prefab

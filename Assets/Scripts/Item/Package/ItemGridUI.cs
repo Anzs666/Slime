@@ -22,7 +22,7 @@ namespace UGUI.Package
         }
         public void SetText(string _text)
         {
-            TransformHelper.FindChildByName(transform,"Text").GetComponent<Text>().text = _text;
+            //TransformHelper.FindChildByName(transform,"Text").GetComponent<Text>().text = _text;
         }
         
         void Start()

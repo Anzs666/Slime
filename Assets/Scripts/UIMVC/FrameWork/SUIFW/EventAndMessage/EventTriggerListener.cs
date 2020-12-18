@@ -48,58 +48,37 @@ namespace SUIFW
 
         public override void OnPointerClick(PointerEventData eventData)
         {
-            if(onClick!=null)
-            {
-                onClick(gameObject);
-            }
+            onClick?.Invoke(gameObject);
         }
 
         public override void OnPointerDown(PointerEventData eventData)
         {
-            if (onDown != null)
-            {
-                onDown(gameObject);
-            }
+            onDown?.Invoke(gameObject);
         }
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
-            if (onEnter != null)
-            {
-                onEnter(gameObject);
-            }
+            onEnter?.Invoke(gameObject);
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
-            if (onExit != null)
-            {
-                onExit(gameObject);
-            }
+            onExit?.Invoke(gameObject);
         }
 
         public override void OnPointerUp(PointerEventData eventData)
         {
-            if (onUp != null)
-            {
-                onUp(gameObject);
-            }
+            onUp?.Invoke(gameObject);
         }
     
         public override void OnSelect(BaseEventData eventBaseData)
         {
-            if (onSelect != null)
-            {
-                onSelect(gameObject);
-            }
+            onSelect?.Invoke(gameObject);
         }
 
         public override void OnUpdateSelected(BaseEventData eventBaseData)
         {
-            if (onUpdateSelect != null)
-            {
-                onUpdateSelect(gameObject);
-            }
+            onUpdateSelect?.Invoke(gameObject);
         }
 	
     }//Class_end

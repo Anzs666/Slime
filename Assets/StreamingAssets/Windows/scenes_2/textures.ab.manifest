@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3475851766
+CRC: 2429052378
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6baf2e56317fcb7978ada75be50841ad
+    Hash: 4d03bb99ad4c677ae45f6420674ed708
   TypeTreeHash:
     serializedVersion: 2
     Hash: 321223f8476375b2b3797dce5fef053a
@@ -22,6 +22,7 @@ Assets:
 - Assets/AB_Res/Scenes_2/Textures/Plants/Trees/tree_1/tree_1_10.png
 - Assets/AB_Res/Scenes_2/Textures/Characters/Appearing (96x96).png
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/Bat/BatFindTarget.png
+- Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/Grangons/Gragon2.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0015_\u56FE\u5C42-1-\u62F7\u8D1D-24.png"
 - Assets/AB_Res/Scenes_2/Textures/Items/BatWing.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0019_\u56FE\u5C42-1-\u62F7\u8D1D-19.png"
@@ -36,6 +37,7 @@ Assets:
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_9.png
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/PinkEye/Float/PinkEyeFloat_10.png
 - Assets/AB_Res/Scenes_2/Textures/UI/Others/Cursor.png
+- Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/Grangons/Gragon1.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0024_\u56FE\u5C42-1-\u62F7\u8D1D-3.png"
 - Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/WalkStart/walkStart-0002.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0013_\u56FE\u5C42-1-\u62F7\u8D1D-26.png"
@@ -140,6 +142,7 @@ Assets:
 - Assets/AB_Res/Scenes_2/Textures/Object/Stones/stone_1.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0022_\u56FE\u5C42-1-\u62F7\u8D1D-9.png"
 - Assets/AB_Res/Scenes_2/Textures/Object/TestSkill.png
+- Assets/AB_Res/Scenes_2/Textures/Background/b1.png
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/Bat/enemy-deadth.png
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/PinkEye/Hurt/PinkEyeHurt_2.png
 - Assets/AB_Res/Scenes_2/Textures/UI/joy/MyJoy.png
@@ -209,6 +212,7 @@ Assets:
 - Assets/AB_Res/Scenes_2/Textures/Plants/Trees/tree_1/tree_1_08.png
 - "Assets/AB_Res/Scenes_2/Textures/Characters/Slime/slime/SlimeSkill/Sallow/ShiLaimu02_0006_\u56FE\u5C42-1-\u62F7\u8D1D-17.png"
 - Assets/AB_Res/Scenes_2/Textures/Characters/Enemies/PinkEye/Walking/PinkEyeWalk_6.png
+- Assets/AB_Res/Scenes_2/Textures/UI/Others/RoadSign.png
 - Assets/AB_Res/Scenes_2/Textures/Object/NormalRewardCase/RewardCase18.png
 - Assets/AB_Res/Scenes_2/Textures/UI/Button/AttackButton1.png
 - Assets/AB_Res/Scenes_2/Textures/Object/NormalRewardCase/RewardCase20.png

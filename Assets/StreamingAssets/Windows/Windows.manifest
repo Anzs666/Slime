@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4140484578
+CRC: 1253006827
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -33,3 +33,6 @@ AssetBundleManifest:
       Name: scenes_2/tiles.ab
       Dependencies:
         Dependency_0: scenes_2/textures.ab
+    Info_8:
+      Name: scenes_3/prefabs.ab
+      Dependencies: {}

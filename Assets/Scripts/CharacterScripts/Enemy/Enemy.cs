@@ -25,15 +25,18 @@ namespace gojiu.slim
             motor = GetComponent<FlyCharacterMotor>();
             motor.InitMotor(status);
             map = RoomManager.Instance.GetRoom();
-           
+
 
         }
-        private void SetFollowRoad()
+        private void FollowPlayer()
         {
             Vector2 aimPos = GameObject.FindGameObjectWithTag("Player").transform.position;
             followRoad = SearchRoadHelper.AStar(transform.position, aimPos);
+            if (followRoad != null && followRoad.Count > 0){
+                motor.DirectMove(new Vector2(followRoad[0].x+0.5f - transform.position.x, followRoad[0].y+0.5f - transform.position.y));
+            }
         }
-        private IEnumerator MoveToPos(Vector2 pos,Func<int> complete)
+        private IEnumerator MoveToPos(Vector2 pos, Func<int> complete)
         {
             while ((Vector2)transform.position != pos)
             {
@@ -45,7 +48,7 @@ namespace gojiu.slim
         int i = 0;
         private void Update()
         {
-            SetFollowRoad();
+            FollowPlayer();
         }
         //设置受伤动画
         public void SetHurtFlash()
@@ -58,17 +61,17 @@ namespace gojiu.slim
             yield return new WaitForSeconds(delayTime);
             sp.material.SetFloat("_FlashAmount", 0);
         }
-        private void OnDrawGizmos()
-        {
-            Gizmos.DrawWireCube(RoomManager.Instance.tile.transform.position, new Vector3(RoomManager.ROOM_MAXWIDTH, RoomManager.ROOM_MAXHEIGHT,1));
-            if (followRoad != null)
-            {
-                foreach (var grid in followRoad)
-                {
-                    Gizmos.color = Color.yellow;
-                    Gizmos.DrawCube(new Vector2(grid.x, grid.y), Vector3.one);
-                }
-            }
-        }
+        //private void OnDrawGizmos()
+        //{
+        //    Gizmos.DrawWireCube(RoomManager.Instance.tile.transform.position, new Vector3(RoomManager.ROOM_MAXWIDTH, RoomManager.ROOM_MAXHEIGHT, 1));
+        //    if (followRoad != null)
+        //    {
+        //        foreach (var grid in followRoad)
+        //        {
+        //            Gizmos.color = Color.yellow;
+        //            Gizmos.DrawCube(new Vector2(grid.x, grid.y), Vector3.one);
+        //        }
+        //    }
+        //}
     }
 }

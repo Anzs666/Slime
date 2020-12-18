@@ -71,10 +71,10 @@ namespace SUIFW
             InitRootCanvasLoading();
             //得到UI根节点、全屏节点、固定节点、弹出节点
             _TraCanvasTransfrom = GameObject.FindGameObjectWithTag(SysDefine.SYS_TAG_CANVAS).transform;
-            _TraNormal = UnityHelper.FindTheChildNode(_TraCanvasTransfrom.gameObject, SysDefine.SYS_NORMAL_NODE);
-            _TraFixed = UnityHelper.FindTheChildNode(_TraCanvasTransfrom.gameObject, SysDefine.SYS_FIXED_NODE);
-            _TraPopUp = UnityHelper.FindTheChildNode(_TraCanvasTransfrom.gameObject, SysDefine.SYS_POPUP_NODE);
-            _TraUIScripts = UnityHelper.FindTheChildNode(_TraCanvasTransfrom.gameObject, SysDefine.SYS_SCRIPTMANAGER_NODE);
+            _TraNormal = TransformHelper.FindChildByName(_TraCanvasTransfrom, SysDefine.SYS_NORMAL_NODE);
+            _TraFixed = TransformHelper.FindChildByName(_TraCanvasTransfrom, SysDefine.SYS_FIXED_NODE);
+            _TraPopUp = TransformHelper.FindChildByName(_TraCanvasTransfrom, SysDefine.SYS_POPUP_NODE);
+            _TraUIScripts = TransformHelper.FindChildByName(_TraCanvasTransfrom, SysDefine.SYS_SCRIPTMANAGER_NODE);
 
             //把本脚本作为“根UI窗体”的子节点。
             this.gameObject.transform.SetParent(_TraUIScripts, false);
@@ -96,7 +96,6 @@ namespace SUIFW
             //BaseUIForm baseUIForms = null;                    //UI窗体基类
             //参数的检查
             if (string.IsNullOrEmpty(uiFormName)) return;
-
             //根据UI窗体的名称，加载到“所有UI窗体”缓存集合中
             LoadFormsToAllUIFormsCatch(uiFormName);
         }
@@ -110,7 +109,8 @@ namespace SUIFW
             BaseUIForm baseUiForm;                          //窗体基类
 
             //参数检查
-            if (string.IsNullOrEmpty(uiFormName)) return;
+            if (string.IsNullOrEmpty(uiFormName)) {
+                return;}
             //“所有UI窗体”集合中，如果没有记录，则直接返回
             _DicALLUIForms.TryGetValue(uiFormName, out baseUiForm);
             if (baseUiForm == null) return;
@@ -291,7 +291,7 @@ namespace SUIFW
                 if (baseUiForm == null)
                 {
                     Debug.Log("baseUiForm==null! ,请先确认窗体预设对象上是否加载了baseUIForm的子类脚本！ 参数 uiFormName=" + goCloneUIPrefabs.name);
-                    //return null;
+                    return;
                 }
                 switch (baseUiForm.CurrentUIType.UIForms_Type)
                 {
@@ -310,17 +310,17 @@ namespace SUIFW
 
                 //设置隐藏
                 goCloneUIPrefabs.SetActive(false);
+                //处理名字
+                string UIName = goCloneUIPrefabs.name.Contains("(Clone)")? goCloneUIPrefabs.name.Remove(goCloneUIPrefabs.name.Length-7): goCloneUIPrefabs.name;
                 //把克隆体，加入到“所有UI窗体”（缓存）集合中。
-                _DicALLUIForms.Add(goCloneUIPrefabs.name, baseUiForm);
-
+                _DicALLUIForms.Add(UIName, baseUiForm);
                 //是否清空“栈集合”中得数据
                 if (baseUiForm.CurrentUIType.IsClearStack)
                 {
                     ClearStackArray();
                 }
 
-                SetUIFormPreShow(baseUiForm, goCloneUIPrefabs.name);
-
+                SetUIFormPreShow(baseUiForm, UIName);
             }
             else
             {
@@ -338,7 +338,7 @@ namespace SUIFW
         {
             BaseUIForm baseUiForm;                          //UI窗体基类
             BaseUIForm baseUIFormFromAllCache;              //从“所有窗体集合”中得到的窗体
-
+            Debug.Log(uiFormName);
             //如果“正在显示”的集合中，存在整个UI窗体，则直接返回
             _DicCurrentShowUIForms.TryGetValue(uiFormName, out baseUiForm);
             if (baseUiForm != null) return;
@@ -388,10 +388,9 @@ namespace SUIFW
         private void ExitUIForms(string strUIFormName)
         {
             BaseUIForm baseUIForm;                          //窗体基类
-
             //"正在显示集合"中如果没有记录，则直接返回。
             _DicCurrentShowUIForms.TryGetValue(strUIFormName, out baseUIForm);
-            if (baseUIForm == null) return;
+            if (baseUIForm == null) { Debug.Log(strUIFormName+"ExitFail"); return; }
             //指定窗体，标记为“隐藏状态”，且从"正在显示集合"中移除。
             baseUIForm.Hiding();
             _DicCurrentShowUIForms.Remove(strUIFormName);
